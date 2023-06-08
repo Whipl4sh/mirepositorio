@@ -2,43 +2,85 @@
 <html>
 
 <head>
-    <title> </title>
+    <title>Aficcionados a la cocina</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <div class="container-nav">
-            <nav class="navbar" role="navegation">
-                <a href="index.html" class="brand">Mi pagina Web</a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicios.html">servicios</a></li>
-                    <li><a href="#">Mas recetas</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <a href="#" class="logo">Cocineros Aficionados<img class= "img.logo"src="/Imagenes/logo2.png" alt="logo"></a>
+            <ul>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#recipes">Recetas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4rX4FJy20aw"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
 
-    </main>
-    <footer class="footer">
-        <div>
-            Este es el contenido del footer. Aquí puedes agregar cualquier texto o elementos adicionales.
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Recetas de Cocina para Aficionados</h1>
+            <p>Descubre deliciosas recetas para disfrutar en casa.</p>
+            <a href="#recipes" class="btn">Ver Recetas</a>
         </div>
-        <button class="footer-button">
-            Botón del footer
-        </button>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos un equipo apasionado por la cocina y nos encanta compartir nuestras recetas favoritas con todos los
+                amantes de la buena comida. Nuestro objetivo es inspirarte a explorar nuevos sabores y preparar platos
+                deliciosos en tu propia cocina.</p>
+        </div>
+    </section>
+
+    <section id="recipes">
+        <div class="container">
+            <h2>Recetas Destacadas</h2>
+            <div class="recipe-card">
+                <img src="/Imagenes/rolldecanela.jpg" alt="Receta 1">
+                <h3>Roll de canela</h3>
+                <p>Son unos bollos de harina de trigo que contienen azucar negra y canela</p>
+                <a href="#" class="btn">Ver Receta</a>
+            </div>
+            <div class="recipe-card">
+                <img src="/Imagenes/cheescake.jpg" alt="Receta 2">
+                <h3>Cheescake Frio</h3>
+                <p>Es una crema de queso frio con sabor dulce pero un toque acido</p>
+                <a href="#" class="btn">Ver Receta</a>
+            </div>
+            <div class="recipe-card">
+                <img src="/Imagenes/focaccia.jpg" alt="Receta 3">
+                <h3>foccacia de Italia Scicilia</h3>
+                <p>Es un pan con romero y tomates cherry longas italianas</p>
+                <a href="#" class="btn">Ver Receta</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p></p>
+            <form>
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="email" name="email" placeholder="Correo Electrónico">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Recetas de Cocina. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script src="script.js"> </script>
+    <div>
+        
+    </div>
 </body>
-<script src="script.js"> </script>
 
 </html>
